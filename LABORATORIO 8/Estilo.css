@@ -1,0 +1,21 @@
+h1 {
+    color: blue;
+    font-size: 30px;
+}
+p {
+    background-color: #ffff99;
+    border: 1px solid gray;
+}
+img {
+    border: 5px solid red;
+}
+.destacado {
+    background-color: #ccffcc;
+    font-weight: bold;
+}
+.contenedor {
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
