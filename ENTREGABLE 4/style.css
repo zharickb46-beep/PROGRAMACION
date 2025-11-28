@@ -1,0 +1,169 @@
+/* === VARIABLES DE COLOR === */
+:root {
+  --color-principal: #c538b7;
+  --color-secundario: #822778;
+  --color-acento: #b74591;
+  --color-fondo: #f9f9fb;
+  --color-texto: #333;
+}
+
+/* === ESTILOS GENERALES === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(to bottom, #e7f3ff, #fff7e6);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+/* === ENCABEZADO === */
+header {
+  background: linear-gradient(90deg, var(--color-principal), var(--color-secundario));
+  padding: 30px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+header h2 {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+/* === SECCIONES === */
+section {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-left: 6px solid var(--color-principal);
+}
+
+section h2 {
+  color: var(--color-principal);
+  margin-top: 0;
+}
+
+/* === LISTAS === */
+.habilidades ul {
+  list-style: none;
+  padding: 0;
+}
+
+.habilidades ul li {
+  background: #f3e6f9;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.habilidades ul li:hover {
+  background: #e2c9f0;
+  transform: translateX(5px);
+}
+
+/* === FORMULARIO === */
+fieldset {
+  border: 2px solid var(--color-acento);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+legend {
+  font-weight: bold;
+  color: var(--color-principal);
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: var(--color-principal);
+  outline: none;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: var(--color-principal);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: var(--color-secundario);
+}
+
+/* === TABLA === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background: var(--color-acento);
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background: #f9f2fc;
+}
+
+/* === PIE DE PÁGINA === */
+footer {
+  background: var(--color-acento);
+  text-align: center;
+  color: white;
+  padding: 18px 0;
+  margin-top: 40px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* === RESPONSIVO === */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
