@@ -1,0 +1,108 @@
+/* Estilo general */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e6e6fa, #d8bfd8, #dda0dd);
+  color: #4b0082;
+}
+
+/* Encabezado */
+header {
+  background-color: #c8a2c8;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #4b0082;
+}
+
+/* Notas musicales decorativas en el header */
+header::after {
+  content: "♪ ♫ ♩ ♬";
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  font-size: 2rem;
+  color: #fff0f5;
+}
+
+/* Secciones */
+section {
+  margin: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Lista de habilidades */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: "♫ ";
+  color: #ba55d3;
+}
+
+/* Botones */
+button {
+  background-color: #d8bfd8;
+  color: #4b0082;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #dda0dd;
+  transform: scale(1.05);
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid #d8bfd8;
+  border-radius: 6px;
+  background-color: #fff0f5;
+  color: #4b0082;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ba55d3;
+  box-shadow: 0 0 8px #ba55d3;
+}
+
+/* Footer */
+footer {
+  background-color: #c8a2c8;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  color: #4b0082;
+}
+
+footer::before {
+  content: "♬ ♩ ♫ ♪";
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  font-size: 1.5rem;
+  color: #fff0f5;
+}
